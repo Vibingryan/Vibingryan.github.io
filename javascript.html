@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title></title>
+</head>
+
+<body>
+<h1></h1>
+
+<script>
+
+// let year = prompt('What year were you born?');
+//
+// if(year==2004) {
+//   alert('Correct!!');
+// }
+// else {
+//   alert('not even close');
+// }
+// for(let i=0; i<3; i++) {
+//   alert(i);
+// }
+
+let q = prompt("What's your name");
+if(q == 'ryan') {
+  let w = prompt('Password?');
+  if(w == '0506') {
+    alert(`Welcome!`);
+    window.location = 'html/teleport.html'
+  }
+  else if(w == '' || w == null){
+    alert('cancelled');
+    window.location.reload();
+  }
+  else {
+    alert('Wrong');
+    window.location.reload();
+  }
+}
+else if(q == '' || q == null){
+  alert(`CANCELLED`);
+  window.location.reload();
+}
+else {
+  alert(`You're not Ryan`);
+  window.location.reload();
+
+}
+
+
+
+</script>
+</body>
+</html>
